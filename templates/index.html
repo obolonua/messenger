@@ -6,11 +6,17 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <div class="chat-box">
-    <div class="messages" id="messages"></div>
-    <div class="input-area">
-      <input type="text" id="input" placeholder="Type a message..." />
-      <button onclick="sendMessage()">Send</button>
+
+<div class="container">
+    <div class="user-list" id="userList">
+      <!-- List of users will go here -->
+    </div>
+    <div class="chat-box">
+      <div class="messages" id="messages"></div>
+      <div class="input-area">
+        <input type="text" id="input" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
     </div>
   </div>
   <script src="{{ url_for('static', filename='script.js') }}"></script>
